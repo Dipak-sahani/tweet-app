@@ -1,0 +1,102 @@
+
+
+.tweet-create{
+    margin-left: 25%;
+    width: 80vh;
+    height: 60vh;
+    border-style: solid;
+    border-width: 4px;
+    border-color: blue;
+    border-radius: 14px;
+    background: #64ebeb;
+    
+    position: absolute;
+
+}
+
+.tweet-create .div-1{
+    margin: 4px 18%;
+    border-radius: 14px;
+    
+}
+.tweet-create .div-2{
+    
+    margin: 4px;
+    border-radius: 14px;
+    position: absolute;
+    
+}
+
+.create-button{
+    margin: 5%;
+    width: 20vh;
+    height: 4vh;
+    background: #269d69;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.create-button:hover{
+    margin: 7%;
+    width: 22vh;
+    height: 5vh;
+}
+.delete-form p{
+    width: 25vh;
+    height: 6vh;
+    background: #17780f;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 15vh;
+    transition: 0.5s;
+    margin-left: 25%;
+    
+    
+}
+.delete-form p a{
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: black;
+}
+.delete-form p:hover{
+    width: 27vh;
+    height: 7vh;
+    background: #dbc34c
+}
+.delete-button{
+    width: 25vh;
+    height: 6vh;
+    background: #db4c4c;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 15vh;
+    transition: 0.5s;
+}
+
+.delete-button:hover{
+    width: 27vh;
+    height: 7vh;
+    background: #dbc34c
+}
+.delete-form{
+    background: #e63d3d;
+    margin-top: 5%;
+    margin-left: 25%;
+    border-style: solid;
+    border-radius: 18px;
+    border-width: 4px;
+    border-color: rgb(124, 9, 84);
+    height: 40vh;
+    width: 80vh;
+    text-align: center;
+    
+}
+.delete-form h2{
+    margin-top: 4%;
+}
+
+.delete-part{
+    display: grid;
+    grid-template-columns: auto auto;
+}

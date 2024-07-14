@@ -1,0 +1,24 @@
+{% include "layout.html" %}
+
+{%block content%}
+
+<h1 style="margin:50px;
+"> hello creater</h1>
+<div class="tweet-create">
+    
+    <div class="div-2">
+        <div>
+            <form method="post" enctype="multipart/form-data">
+                <div class="div-1">
+                    {{form.text}}
+                </div>
+                {{form.photo}}
+                {{form.Change}}
+                {% csrf_token %}
+                <br><button type="submit" class="create-button">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

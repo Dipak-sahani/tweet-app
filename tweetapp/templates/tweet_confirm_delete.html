@@ -1,0 +1,19 @@
+!{% include "layout.html" %}
+
+
+{% block  content%}
+<div style=" margin-top :50px;">
+    <div class="delete-form">
+        
+        <h2>Are you sure</h2>
+        <div class="delete-part">
+        <p><a href="{% url "list" %}">Go back</a></p>
+        <form method="post" >
+            {% csrf_token %}
+            <button type="submit" class="delete-button">Delete</button>
+        </form>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

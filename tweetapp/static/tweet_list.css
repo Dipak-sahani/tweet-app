@@ -1,0 +1,132 @@
+.sec-nav{
+    margin-top: 50px;
+    margin-left: 40%;
+    height: 10vh;
+    transition: 0.5s;
+    
+    
+}
+
+.sec-nav p{
+    text-align: center;
+    border-style: solid;
+    border-radius: 12px;
+    background: #56b84d;
+    height: 5vh;
+    width: 30vh;
+    align-items: center;
+    transition: 0.5s;
+}
+.sec-nav p:hover{
+    height: 6vh;
+    width: 32vh;
+    
+}
+.create-link{
+    text-decoration: none;
+    color: #000000;
+    font-size: large;
+}
+.card-container{
+    
+    margin-right: 25%;
+    padding-top: 10px;
+    margin-left: 25%;
+    width: auto;
+    grid-template-columns: autp auto;
+    
+
+}
+
+
+.card{
+    background: #95fef9;
+    border: #a80f0f;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 8px;
+    width: auto;
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.card img{
+    height: 40vh;
+    width: 45vh;
+    border-radius: 14px;
+}
+.card .part-div h1{
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+}
+.card p{
+   
+    margin: 5px;
+    padding: 2px;
+}
+.card .part-div{
+    display: grid;
+    grid-template-rows: auto auto 20%;
+}
+.card .for-mob{
+    display: none;
+}
+.card .part-div div .button1{
+    width: 16vh;
+    height: 4vh;
+    background: #13790a;
+    margin: 4%;
+    border-radius: 12px;
+    cursor: pointer;
+    color: black;
+    font-size: large;
+    text-align: center;
+    text-decoration: solid;
+}
+.card .part-div div .button2{
+    width: 16vh;
+    height: 4vh;
+    background: #d12929;
+    margin: 4%;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #000000;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+.button-div{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+@media screen and (max-width:600px) {
+    .card{
+        height: 500px;
+        background: #e1a8a8;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .card .for-mob{
+        display: contents;
+    }
+    .card .part-div h1{
+        display: none;
+    }
+    .card .part-div p{
+        display: none;
+    }
+    .card img{
+        height: 100%;
+        width: 100%;
+        border-radius: 14px;
+    }
+    .card-container{
+        grid-template-columns: auto ;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+}

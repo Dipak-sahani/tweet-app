@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block  content%}
+
+<body>
+    <div class="sec-nav">
+      <p><a href="{% url "create" %}" class="create-link"> Create</a></p> 
+    </div>
+<div class="card-container">
+{% for tweet in tweets %}
+<div  class="card">
+   <div>
+      <img src="{{tweet.photo.url}}" alt="userImage">
+   </div>
+   <div class="part-div">
+      <h1>{{tweet.user.username}}</h1>
+      <p>{{tweet.text}} </p>
+      <div class="button-div">
+         {% if tweet.user == user %}
+         <a href="{% url "edit" tweet.id %}" class="button1">Edit</a>
+         <a href="{% url "delete" tweet.id %} " class="button2">Delete</a>
+         {% endif %}
+      </div>
+   </div>
+   <div class="for-mob">
+      <h1>{{tweet.user.username}}</h1>
+      <p> Lorem ipsum dolor sit amet.</p>
+      <p>{{tweet.text}} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, sit. </p>
+   </div>
+   
+</div>
+
+{% endfor %}
+</div>
+
+{% endblock %}

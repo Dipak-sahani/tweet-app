@@ -1,0 +1,27 @@
+.login-form{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+.register-form{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+.register-button{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 20vh;
+    height: 4vh;
+    text-align: center;
+    padding-top: 2px;
+    cursor: pointer;
+    border: solid ;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.register-button:hover{
+    color: #e2842b;
+    font-size: large;
+    width: 22vh;
+    height: 5vh;
+}

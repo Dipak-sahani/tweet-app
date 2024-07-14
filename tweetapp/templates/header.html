@@ -1,0 +1,41 @@
+{% load static %}
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static "tweet_form.css" %}">
+    <link rel="stylesheet" href= {% static "layout.css" %}>
+    <link rel="stylesheet" href={% static "tweet_list.css" %}>
+    <link rel="stylesheet" href="{% static "registration.css" %}">
+    <link rel="script" href="/static/logic.js">
+    <title>
+        {%block title %}
+            Home
+        {% endblock %}
+    </title>
+    
+
+    <div class="header-class">
+        <img src="/static/logo.jpg" alt="logo" class="image">
+        <h1></h1>
+        <div class="nav-subdiv">
+            <a href="{% url "list" %}" class="nav-tag" >Home</a>
+        <a href="#" class="nav-tag">About</a>
+        
+        {% if user.is_authenticated %}
+        <form action="{% url "logout" %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+        {% else %}
+        <a href="{% url "login" %}" class="nav-tag">Login</a>
+        {% endif %}
+        </div>
+        
+    </div>
+
+
+    
+  
+    
+</head>
